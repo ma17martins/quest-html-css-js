@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest Formulário</title>
+
+
+    <link rel="stylesheet" href="./src/reset.css">
+    <link rel="stylesheet" href="./src/estilo.css">
+</head>
+
+<body>
+    <main class="container">
+        <section>
+            <div class="texto-duvidas">
+                <h1>FICOU COM DÚVIDA?<br>NOS MANDE UMA MENSAGEM!</h1>
+                <br>
+
+                <p> caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos
+                    de 24h.</p>
+            </div>
+
+            <form class="formulario" id="formulario">
+                <input class="dados" type="text" placeholder="Nome Completo *">
+                <span class="msg-erro">* Campo obrigatório</span>
+
+                <input class="dados" type="email" placeholder="Email *">
+                <span class="msg-erro">* Campo obrigatório</span>
+
+                <input class="dados" type="number" placeholder="Telefone *">
+                <span class="msg-erro">* Campo obrigatório</span>
+
+                <textarea class="dados mensagem" type="text" placeholder="Mensagem *"></textarea>
+                <span class="msg-erro">* Campo obrigatório</span>
+
+                <p>* Campos obrigatórios</p>
+
+                <button type="submit" class="botao">Enviar</button>
+
+            </form>
+
+        </section>
+
+
+
+    </main>
+
+
+    <script src="./src/formulario.js"></script>
+</body>
+
+</html>
