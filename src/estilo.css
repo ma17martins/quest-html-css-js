@@ -14,92 +14,83 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 200px;
+    padding: 150px;
 }
 
 .texto-duvidas {
     color: rgba(255, 255, 255, 1);
-    display: block;
-    margin: 50px;
+    margin: 20px 100px 0 0;
+    
 
 }
 
 .texto-duvidas h1 {
     font-size: 20px;
     font-weight: 900;
-    width: 320px;
-    height: 46px;
-    font-size: 20px;
-    line-height: 23.44px;
+
 }
 
 .texto-duvidas p {
     font-size: 15px;
     font-weight: 400;
-    width: 300px;
-    height: 54px;
-    line-height: 17.58px;
-
 }
 
 .formulario {
+    display: flex;
     justify-content: center;
     align-items: center;
     display: block;
     background-color: #ffffff;
-    width: 340px;
-    height: 388px;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 
-.formulario input {
-    display: flex;
-    font-size: 15px;
-    font-weight: 700;
-    width: 298px;
-    height: 35px;
-    margin: 15px 20px 0 21.99px;
-    border: 1px solid rgba(0, 0, 0, 1);
-    border-radius: 5px;
-    padding: 9px;
-}
-
+.formulario input,
 .formulario .mensagem {
-    font-weight: 700;
-    font-size: 15px;
-    color: rgba(168, 168, 168, 1);
-    width: 298.01px;
-    height: 100px;
-    margin: 15px 20px 0 21.99px;
+    width: 100%;
+    height: 35px;
+    margin: 10px 0;
     border: 1px solid rgba(0, 0, 0, 1);
     border-radius: 5px;
-    padding: 9px;
+    padding: 10px;
+    font-size: 14px;
+}
+.formulario .mensagem{
+    height: 100px;
 }
 
 .formulario p {
-    padding-top: -2px;
-    margin: 15px 20px 1px 20px;
+    margin: 10px 0;
+    font-size: 12px;
+    text-align: left;
+    width: 100%;
+    
 }
 
 .formulario .botao {
-    width: 298.01px;
-    height: 41.13px;
-    margin: 20px 21.99px;
+    width: 100%;
+    height: 45px;
+    margin-top: 15px;
     background-color: #3ccc87;
     color: #ffffff;
     border: none;
     border-radius: 5px;
     padding: 12px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .formulario span {
     display: block;
-    height: 9px;
-    font-size: 8px;
+    font-size: 10px;
     font-weight: 400;
-    margin: 0px 0 -8px 21.99px;
     color: rgba(245, 46, 46, 1);
+    text-align: left;
+    width: 100%;
 }
 
 .formulario span.msg-erro {
@@ -113,3 +104,65 @@ section {
 .formulario .nao-preenchido {
     border: 1px solid red;
 }
+
+/* Responsivo para 720px */
+@media (max-width: 720px) {
+    section {
+        flex-direction: column;
+        padding: 100px 20px;
+    }
+    .texto-duvidas{
+        width: 60%;
+        margin: 30px;
+        }
+
+    .texto-duvidas h1 {
+        font-size: 22px;
+    }
+
+    .texto-duvidas p {
+        font-size: 16px;
+    }
+
+    .formulario {
+        width: 80%;
+        padding: 15px;
+    }
+}
+
+/* Responsivo para 480px */
+@media (max-width: 480px) {
+    section {
+        flex-direction: column;
+        padding: 30px 10px;
+    }
+
+
+    .texto-duvidas h1 {
+        font-size: 16px;
+    }
+
+    .texto-duvidas p {
+        font-size: 13px;
+    }
+
+    .formulario {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .formulario input,
+    .formulario .mensagem {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .formulario .botao {
+        font-size: 14px;
+    }
+
+    .formulario p {
+        font-size: 10px;
+    }
+}
+
