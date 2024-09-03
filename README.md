@@ -1,5 +1,5 @@
 # Desafio HTML/CSS/JS
-## Projeto formulário 
+## Projeto formulário DevQuest
 
 ####  Tela principal
 [<img src="./src/image/Screenshot-menu-principal.png">](https://github.com/ma17martins/quest-html-css-js)
